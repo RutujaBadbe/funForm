@@ -1,0 +1,85 @@
+html,body
+{
+  height: 100vh;
+  font-family: 'Anaheim','Centaur';
+  font-size: 1.2em;
+  background-color: #ffe4c4;
+}
+.border
+{
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: solid 1px;
+  border-radius: 20px;
+  padding: 5%;
+  padding-top: 2%;
+  background-color: #fffaf0;
+}
+header
+{
+  text-align: center;
+}
+header h1
+{
+  text-transform: capitalize;
+}
+header span
+{
+  font-family: none;
+}
+fieldset
+{
+  margin-bottom: 2%;
+}
+legend
+{
+  font-size: 110%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+label,input
+{
+  display: inline-block;
+  margin-bottom: 3%;
+}
+input:hover
+{
+  background-color: lightgrey;
+}
+input:focus
+{
+  background-color: lightgrey;
+}
+.dropdown:hover
+{
+  background-color: lightgrey;
+}
+.title
+{
+  font-size: 110%;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+p
+{
+  margin-top: 0;
+}
+#submit
+{
+  display: block;
+  width: 30%;
+  padding: 3%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #3732ad;
+  color: #fff;
+}
+#submit:hover
+{
+  cursor: pointer;
+  border: inset 2px;
+/*  font-weight: bold;*/
+  text-align: center;
+}

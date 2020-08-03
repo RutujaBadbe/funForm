@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Application for Dating</title>
+    <link rel="stylesheet" type="text/css" href="dating.css">
+  </head>
+  <body>
+    <div class="border">
+      <header>
+        <h1>Application to date me</h1>
+        <h3>Note: Application shoud be submitted <span>10</span> days prior the dating</h3>
+      </header>
+      <form id="form1" action="" method="post">
+        <fieldset>
+          <legend>Personal Details</legend><br>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name here" required><br>
+          <label for="Add">Address:</label>
+          <input type="text" name="Address" placeholder="Enter your Address" id="Add" required><br>
+          <label for="mail">Email:</label>
+          <input type="email" name="email" id="mail" placeholder="Enter your personal mail Id" required><br>
+          <label for="phone">Mobile No.:</label>
+          <input type="text" name="Mobile" id="phone" placeholder="Enter 10 digit phone number" required pattern="[0-9]{10}"><br>
+          <label for="iq">IQ:</label>
+          <input type="number" name="IQ" id="iq" required placeholder="Enter IQ"><br>
+
+          <div>
+            <label class="title">Gender</label>
+            <p>
+              <label><input type="radio" name="gender" value="male" checked>Male</label><br>
+              <label><input type="radio" name="gender" value="female">Female</label><br>
+              <label><input type="radio" name="gender" value="other">Other</label><br>
+            </p>
+
+          </div>
+          <label>Date of propesed outing: <input type="date" name="date" required></label>
+        </fieldset>
+        <fieldset>
+          <label class="title">Check all that apply</label><br>
+          <p>
+            <label><input type="checkbox" name="qual" value="Have tattoo/piercings">I have tattoos and/or piercings</label><br>
+            <label><input type="checkbox" name="qual" value="older">I am older than you</label><br>
+            <label><input type="checkbox" name="qual" value="same age" checked>I am same age as you</label><br>
+            <label><input type="checkbox" name="qual" value="work full-time" checked>I work full-time</label><br>
+            <label><input type="checkbox" name="qual" value="well lit public location" checked>Date is at well lit public location</label><br>
+          </p>
+
+        </fieldset>
+        <fieldset>
+          <label class="title">Educational qulification</label>
+          <select class="dropdown">
+            <option value="University">University</option>
+            <option value="College">College</option>
+            <option value="High school">High school</option>
+            <option value="none">None</option>
+          </select>
+        </fieldset>
+        <fieldset>
+          <legend>Essay</legend>
+          <label for="why">explain why you want to date me in at least 50 words:</label><br>
+          <textarea name="Why want to date" id="why" rows="5" cols="50" placeholder="Enter text here"></textarea><br>
+          <label for="contact">Enter 2 contacts for referal</label><br>
+          <textarea name="referal" id="contact" rows="5" cols="50" placeholder="Enter contact details with name and relation"></textarea><br>
+          <label for="myfiles">Upload Police Clearance Certificate, Bank Statement and Medical Certifiates here:</label><br>
+          <input type="file" id="myfiles" name="certificates" multiple><br>
+        </fieldset>
+        <input type="submit" id="submit" value="Submit the Application"><br>
+      </form>
+    </div>
+  </body>
+</html>
